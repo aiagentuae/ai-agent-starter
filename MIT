@@ -1,0 +1,46 @@
+
+---
+
+### Файл: `examples/basic_usage.py`
+
+```python
+"""
+Basic usage example for AI Agent Template.
+All examples follow the Placeholder Standard ($PLC).
+"""
+
+from agent import Agent, API_KEY, TOKEN, CONFIG, TEST, SECRET
+
+def main():
+    print("=" * 60)
+    print("$PLC Standard Examples")
+    print("=" * 60)
+    
+    # 1. Default agent with $PLC placeholders
+    print("\n1. Default Agent:")
+    agent = Agent()
+    config = agent.get_config()
+    print(f"   Config: {config}")
+    
+    # 2. Custom agent with $PLC placeholders
+    print("\n2. Custom Agent:")
+    custom_agent = Agent(
+        api_key=API_KEY,
+        token=TOKEN
+    )
+    result = custom_agent.run()
+    
+    # 3. Access $PLC constants
+    print("\n3. $PLC Constants:")
+    print(f"   API_KEY: {API_KEY}")
+    print(f"   TOKEN: {TOKEN}")
+    print(f"   CONFIG: {CONFIG}")
+    print(f"   TEST: {TEST}")
+    print(f"   SECRET: {SECRET}")
+    
+    print("\n" + "=" * 60)
+    print("✅ All examples follow the $PLC standard.")
+    print("📖 Reference: https://placeholder-standard.github.io/plc")
+
+if __name__ == "__main__":
+    main()
