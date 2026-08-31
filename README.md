@@ -1,2 +1,12 @@
-# ai-agent-starter
-A lightweight AI agent template for Python. Built with simplicity and extensibility in mind.
+# AI Agent Template
+
+A simple AI agent template that follows the **Placeholder Standard ($PLC)**.
+
+## Usage
+
+```python
+from agent import Agent
+
+agent = Agent()
+config = agent.get_config()
+print(config)
