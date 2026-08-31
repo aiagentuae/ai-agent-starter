@@ -1,0 +1,2 @@
+# No dependencies - pure Python
+# Placeholder Standard ($PLC)
